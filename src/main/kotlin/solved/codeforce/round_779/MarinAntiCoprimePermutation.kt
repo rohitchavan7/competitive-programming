@@ -39,3 +39,18 @@ fun countBeautifulPermutation(n: Long) {
         println("0")
     }
 }
+
+/**
+ * Sample input
+ *
+ *      7
+ *      1
+ *      2
+ *      3
+ *      4
+ *      5
+ *      6
+ *      1000
+ *
+ *
+ */
