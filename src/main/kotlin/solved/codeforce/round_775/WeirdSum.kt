@@ -84,7 +84,7 @@ data class CellColor(
 
 
 /**
- * Sample Input
+ * Example Input
  *
  *      4 4
  *      1 1 2 3

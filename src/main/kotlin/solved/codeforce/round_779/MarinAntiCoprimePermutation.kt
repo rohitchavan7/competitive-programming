@@ -41,7 +41,7 @@ fun countBeautifulPermutation(n: Long) {
 }
 
 /**
- * Sample input
+ * Example input
  *
  *      7
  *      1

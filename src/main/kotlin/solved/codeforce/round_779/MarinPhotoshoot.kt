@@ -47,7 +47,7 @@ fun getBeautifulPicture(cosPlayers: String) {
 }
 
 /**
- * Sample Input
+ * Example Input
  *
  *      9
  *      3
