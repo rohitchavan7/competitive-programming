@@ -25,7 +25,8 @@ fun main() {
 
         readLine()!!.trim().split("\\s+".toRegex()).map { items ->
             arrayValues.add(items.toLong())
-        }
+
+        }// It reads whitespace separated values into list
 
         println(arrayValues.joinToString(" "))
     }
