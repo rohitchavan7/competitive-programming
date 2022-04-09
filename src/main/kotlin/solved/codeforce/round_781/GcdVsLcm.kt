@@ -1,4 +1,4 @@
-package unsolved.codeforce
+package solved.codeforce.round_781
 
 /**
  * Solved =>  Gcd vs Lcm (Codeforces Round #781)
