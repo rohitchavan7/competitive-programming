@@ -16,7 +16,7 @@ fun main() {
     for (i in 1..numberOfTestCase) {
 
         val (r, a, b) = readLine()!!.trim().split("\\s+".toRegex()).map(String::toInt)
-        val input = Input(r,a,b)
+        val input = Input(r, a, b)
 
         println("Case #$i: ${calculateCircleArea(input)}")
 
@@ -26,8 +26,7 @@ fun main() {
 }
 
 fun calculateCircleArea(input: Input): Double {
-    val a = PI * input.R * input.R
-    val areaList = arrayListOf(a)
+    var ans = input.R * input.R
 
     var dir = Direction.LEFT
 
@@ -37,25 +36,25 @@ fun calculateCircleArea(input: Input): Double {
 
         if (dir == Direction.LEFT) {
             r *= input.A
-            val ar = PI * r * r
-            areaList.add(ar)
+            ans += r * r
+
             dir = Direction.RIGHT
 
 
         } else {
             r /= input.B
-            val ar = PI * r * r
-            areaList.add(ar)
+            ans += r * r
+
             dir = Direction.LEFT
 
         }
 
     }
 
-    return areaList.sum()
+    return ans * PI
 }
 
-enum class Direction{
+enum class Direction {
     LEFT,
     RIGHT
 }
