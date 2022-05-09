@@ -31,5 +31,19 @@ fun main() {
         println(arrayValues.joinToString(" "))
     }
 
+}
 
+//or
+
+fun readArrayList() {
+    val numberOfTestCase = readLine()!!.toLong()
+
+    for (i in 1..numberOfTestCase) {
+
+        readLine()!!//no items in list
+
+        val list: List<Int> = readLine()!!.trim().split("\\s+".toRegex()).map(String::toInt)
+
+        println(list)
+    }
 }
